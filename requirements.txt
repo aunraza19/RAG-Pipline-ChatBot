@@ -1,0 +1,19 @@
+# Core LangChain and Vector Store components
+langchain-community
+langchain-chroma # For ChromaDB
+langchain-huggingface # For HuggingFaceEmbeddings
+
+# For environment variable loading
+python-dotenv
+
+# For embedding model (BAAI/bge-small-en-v1.5)
+sentence-transformers
+torch # CPU version is fine for embeddings only
+transformers
+
+# For the LLM API (Groq in your case)
+langchain-groq
+groq # While langchain-groq wraps it, having groq explicitly can sometimes help
+
+# For the User Interface
+streamlit
