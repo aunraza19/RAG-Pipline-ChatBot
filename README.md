@@ -1,10 +1,10 @@
 # University Academic Policy Chatbot
 This project provides an intelligent chatbot designed to help university students quickly find answers to their academic policy questions. Leveraging Retrieval-Augmented Generation (RAG), the chatbot provides accurate, context-aware responses by searching through the university's academic manual.
 
-##📚 Project Overview
+## 📚 Project Overview
 Navigating dense academic manuals can be time-consuming and frustrating for students. This chatbot aims to solve that problem by offering an intuitive, conversational interface where students can simply ask questions in natural language and receive precise answers directly extracted from the official policy documents.
 
-##💡 Problem & Solution
+## 💡 Problem & Solution
 ### The Problem:
 University academic manuals are often lengthy, complex, and difficult to navigate. Students frequently struggle to find specific policies related to course withdrawal, grading, readmission, or other academic procedures, leading to confusion, delays, and reliance on administrative staff for basic queries.
 
@@ -37,9 +37,8 @@ pip (Python package installer)
 
 ```Bash
 
-git clone https://github.com/your_username/your_repository_name.git
+git clone https://github.com/aunraza19/RAG-Pipline-ChatBot.git
 cd your_repository_name
-(Replace your_username/your_repository_name with your actual GitHub repository link.)
 ```
 ```bash
 pip install -r requirements.txt
