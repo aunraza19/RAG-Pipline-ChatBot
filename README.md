@@ -12,7 +12,8 @@ University academic manuals are often lengthy, complex, and difficult to navigat
 ### The Solution:
 This chatbot utilizes a Retrieval-Augmented Generation (RAG) system to bridge the gap between complex documentation and student needs.
 
-## Data Ingestion: The academic manual (a PDF document) is processed, split into manageable chunks, and converted into numerical representations called embeddings. These embeddings are stored in a ChromaDB vector store.
+## Data Ingestion:
+The academic manual (a PDF document) is processed, split into manageable chunks, and converted into numerical representations called embeddings. These embeddings are stored in a ChromaDB vector store.
 Information Retrieval: When a student asks a question, the chatbot converts the query into an embedding and searches the ChromaDB for the most relevant policy chunks.
 Answer Generation: The retrieved policy chunks are then provided as context to a powerful Large Language Model (LLM) from Groq. The LLM uses this context to generate a concise and accurate answer, ensuring responses are grounded in the official academic policies.
 User Interface: A user-friendly interface built with Streamlit allows students to easily interact with the chatbot, ask questions, and view the generated answers along with their original sources.
@@ -81,6 +82,7 @@ Create a .env file:
 In the root directory of your project, create a file named .env and add your API key:
 
 GROQ_API_KEY="gsk_YOUR_GROQ_API_KEY_HERE"
+
  HUGGINGFACEHUB_API_TOKEN="hf_YOUR_HF_TOKEN_HERE"  Optional: Only if your embedding model requires a Hugging Face token
 Important: Do NOT commit your .env file to Git! It's included in .gitignore.
 
@@ -89,9 +91,10 @@ You need to process your academic_manual.pdf and build the vector database.
 
 Place your PDF: Ensure your university's academic manual is named academic_manual.pdf and placed in the root directory of the project.
 Run the ingestion script:
-Bash
+```Bash
 
 python ingest.py:
+```
 This script will load the PDF, split it into chunks, generate embeddings, and store them in the ./chroma_db directory. You will see progress messages in the console.
 Run the Streamlit Chatbot
 Once the data ingestion is complete, you can start the chatbot.
@@ -99,8 +102,9 @@ Once the data ingestion is complete, you can start the chatbot.
 ```Bash
 
 streamlit run app.py
-This will launch the Streamlit application in your web browser, typically at http://localhost:8501.
 ```
+This will launch the Streamlit application in your web browser, typically at http://localhost:8501.
+
 
 
 📈 Future Improvements:
@@ -109,3 +113,12 @@ Streaming Responses: Stream LLM output token by token for a faster perceived res
 Enhanced Source Display: Use st.expander to neatly present sources and potentially highlight relevant snippets.
 User Feedback: Add a mechanism (e.g., thumbs up/down buttons) to collect feedback on response quality, aiding in continuous improvement.
 Hybrid Search/Re-ranking: Explore advanced retrieval techniques to enhance answer accuracy for complex queries.
+
+## 📄 License
+MIT License. Feel free to fork and build upon this for research or academic use.
+
+## 👤 Author
+Made by Aun Raza
+If you use this project, feel free to ⭐ star it or cite the repo.
+
+# :)
