@@ -1,6 +1,7 @@
 # University Academic Policy Chatbot
 ## A RAG Pipline ChatBot
 This project provides an intelligent chatbot designed to help university students quickly find answers to their academic policy questions. Leveraging Retrieval-Augmented Generation (RAG), the chatbot provides accurate, context-aware responses by searching through the university's academic manual.
+Deployed at: https://huggingface.co/spaces/aun09/university-manual-chatbot
 
 ## 📚 Project Overview:
 Navigating dense academic manuals can be time-consuming and frustrating for students. This chatbot aims to solve that problem by offering an intuitive, conversational interface where students can simply ask questions in natural language and receive precise answers directly extracted from the official policy documents.
